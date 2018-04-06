@@ -1,0 +1,188 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("IRANSansWeb_light.woff") format("woff");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("IRANSansWeb_medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("IRANSansWeb_ultraLight.woff") format("woff");
+}
+
+.body {
+    font-family: IRANSans !important;
+    font-weight: 300 ;
+
+}
+
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+}
+
+
+.grid-container-1 > div {
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.gird-type-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 1170px;
+    margin : auto;
+
+}
+
+.gird-type-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.header-left {
+    justify-content: left;
+}
+
+.header-right {
+
+    justify-content: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.login-btn {
+    float: right;
+    direction: rtl;
+    background-color: #666666;
+    color: white;
+    border: 1px solid #666666;
+}
+
+.login-btn:hover {
+    float: right;
+    direction: rtl;
+    background-color: #3B55E6;
+    color: white;
+    border: 1px solid #3B55E6;
+}
+
+.register-btn {
+    background-color: transparent;
+    float: right;
+    direction: rtl;
+    color: black;
+    border: 1px solid #666666;
+}
+
+.register-btn:hover {
+    background-color: transparent;
+    float: right;
+    direction: rtl;
+    color: #3B55E6;
+    border: 1px solid #3B55E6;
+}
+
+.button {
+    font-family: IRANSans;
+    width: 137px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 45px;
+    padding: auto;
+    margin: 10px 5px;
+}
+
+.search-form {
+    float: left;
+    width: 237px;
+    height: 40px;
+    border-radius: 45px;
+    border: 1px solid #666666;
+    margin: 10px 5px;
+}
+
+.search-box {
+    margin: 10px 5px;
+    z-index: -1;
+}
+
+.search-icon {
+    float: left;
+    margin: auto;
+}
+
+.text-menu-flex {
+    margin: auto;
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-menu-item {
+     font-size: 17px;
+     color: #666666;
+     border-bottom : 1px solid transparent;
+     padding: 1px;
+ }
+
+.text-menu-item:hover {
+    font-size: 17px;
+    color: #3B55E6;
+    border-bottom : 1px solid #3B55E6;
+    padding: 1px;
+
+}
+
+.menu-flex {
+
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu-item {
+    width: 180px;
+    height: 98px;
+    color: #666666;
+    border : 1px solid #666666;
+    border-radius: 5px;
+}
+
+.menu-item:hover {
+    width: 180px;
+    height: 98px;
+    color: #3B55E6;
+    border : 1px solid #3B55E6;
+    border-radius: 5px;
+
+}
+
+.menu-item-inner {
+    font-size: 17px;
+    padding: 10px;
+}
