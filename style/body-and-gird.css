@@ -1,0 +1,57 @@
+
+.body {
+    font-family: IRANSans !important;
+    font-weight: 300 ;
+    font-size: 16px;
+
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+}
+
+
+.grid-container-1 > div {
+    text-align: center;
+    font-size: 30px;
+}
+
+.gird-type-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 1170px;
+    margin : auto;
+
+}
+
+.gird-type-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.header-left {
+    justify-content: left;
+}
+
+.header-right {
+    justify-content: right;
+}
+
+
+.text-header {
+    font-weight: 300;
+    font-size: 18px;
+    color: #666666;
+    direction: rtl;
+    text-align: right;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 16px;
+    direction: rtl;
+    text-align: right;
+}
+
