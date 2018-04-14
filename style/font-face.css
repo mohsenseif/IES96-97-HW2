@@ -27,18 +27,18 @@
     font-family: IRANSans;
     font-style: normal;
     font-weight: normal;
-    src: url(../IES96-97-HW2/font/IRANSansWeb_light.woff) format("woff");
+    src: url("../IES96-97-HW2/font/IRANSansWeb_light.woff") format("woff");
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 300;
-    src: url(../IES96-97-HW2/font/IRANSansWeb_ultraLight.woff) format("woff");
+    src: url("../IES96-97-HW2/font/IRANSansWeb_ultraLight.woff") format("woff");
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: bold;
-    src: url(../IES96-97-HW2/font/IRANSansWeb_medium.woff) format("woff");
+    src: url("../IES96-97-HW2/font/IRANSansWeb_medium.woff") format("woff");
 }
