@@ -1,3 +1,5 @@
+/*
+
 @font-face {
     font-family: IRANSans;
     font-style: normal;
@@ -19,9 +21,17 @@
     src: url(../font/IRANSansWeb_ultraLight.woff) format("woff");
 }
 
+*/
+
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: normal;
     src: url(../IES96-97-HW2/font/IRANSansWeb_light.woff) format("woff");
 }
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../IES96-97-HW2/font/IRANSansWeb_ultraLight.woff) format("woff");
