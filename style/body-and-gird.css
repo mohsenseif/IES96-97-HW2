@@ -3,7 +3,6 @@
     font-family: IRANSans !important;
     font-weight: 300 ;
     font-size: 16px;
-
 }
 
 .grid-container-1 {
@@ -23,7 +22,6 @@
     grid-column-end: 3;
     width: 1170px;
     margin : auto;
-
 }
 
 .gird-type-2 {
@@ -78,7 +76,6 @@
 .contact-detail-grid {
     display: grid;
     grid-template-columns: auto 250px 250px;
-
 }
 
 .contact-detail-grid > div > p {
@@ -97,5 +94,4 @@
 .about-grid-item {
     margin-top: 20px;
     border: 1px solid #DFDFDF;
-
 }

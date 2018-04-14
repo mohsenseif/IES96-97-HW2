@@ -121,6 +121,7 @@
     border : 1px solid #3B55E6;
 }
 
+
 .menu-item:active {
     color: white;
     background-color: #3B55E6;
@@ -134,7 +135,6 @@
     color: #3B55E6;
     border : 1px solid #3B55E6;
     border-radius: 5px;
-
 }
 
 .menu-item-inner {
@@ -143,11 +143,16 @@
 }
 
 .menu-item-icon {
+    fill: #666666;
     height: 40px;
     width: 40px;
 }
 
 .menu-item-icon:hover {
     fill: #3B55E6;
+}
 
+
+.menu-item-icon:active {
+    fill: white;
 }

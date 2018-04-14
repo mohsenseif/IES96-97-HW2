@@ -34,9 +34,11 @@
 }
 
 .footer-icons {
+    fill: #666666;
     height: 45px;
     width: 45px;
     padding: 2px;
+    cursor: pointer;
 }
 
 .footer-icons:hover {
