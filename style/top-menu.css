@@ -43,6 +43,7 @@
     border-radius: 45px;
     padding: auto;
     margin: 10px 5px;
+    outline: none;
 }
 
 .search-form {
@@ -50,8 +51,14 @@
     width: 237px;
     height: 37px;
     border-radius: 45px;
+    text-align: center !important;
     border: 1px solid #666666;
     margin: 10px 5px;
+    outline: none;
+}
+
+.search-form:focus {
+    border: 1px solid #3B55E6;
 }
 
 .search-box {
@@ -105,9 +112,23 @@
     border-radius: 5px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
     transition-duration: 0.5s;
+    cursor: pointer;
+
 }
 
 .menu-item:hover {
+    color: #3B55E6;
+    border : 1px solid #3B55E6;
+}
+
+.menu-item:active {
+    color: white;
+    background-color: #3B55E6;
+    border : 1px solid #3B55E6;
+}
+
+
+.menu-item-active {
     width: 180px;
     height: 98px;
     color: #3B55E6;

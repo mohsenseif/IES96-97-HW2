@@ -31,6 +31,14 @@
     grid-row-end: 3;
 }
 
+.page-title {
+    font-weight: 300;
+    font-size: 22px;
+    color: #666666;
+    line-height: 0.2;
+    padding-top: 20px;
+}
+
 .header-left {
     justify-content: left;
 }
@@ -41,7 +49,7 @@
 
 
 .text-header {
-    font-weight: 300;
+    font-weight: normal;
     font-size: 18px;
     color: #666666;
     direction: rtl;
@@ -55,3 +63,39 @@
     text-align: right;
 }
 
+.red-box-contact {
+    color: white;
+    font-weight: normal;
+    background-color: #B65959;
+    border: 1px solid #707070 ;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin: 50px 0;
+}
+
+.contact-detail-grid {
+    display: grid;
+    grid-template-columns: auto 250px 250px;
+
+}
+
+.contact-detail-grid > div > p {
+    line-height: 0.75 !important;
+    font-size: 15px !important;
+}
+
+.about-grid {
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 400px 750px ;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.about-grid-item {
+    margin-top: 20px;
+    border: 1px solid #DFDFDF;
+
+}
