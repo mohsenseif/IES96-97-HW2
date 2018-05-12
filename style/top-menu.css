@@ -156,3 +156,11 @@
 .menu-item-icon:active {
     fill: white;
 }
+
+.menu-item-inner > a {
+    color: #666666;
+}
+
+.menu-item-inner > a:active {
+    color: white;
+}
