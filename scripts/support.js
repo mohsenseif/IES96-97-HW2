@@ -35,7 +35,6 @@ function create_a_received_msg(message_txt) {
     content.appendChild(msg);
 }
 
-
 function create_a_send_msg() {
     var inputTxt = document.getElementById("inputTextBox").value;
     if (inputTxt != '') {
