@@ -38,31 +38,31 @@ function create_a_received_msg(message_txt) {
 function create_a_send_msg() {
     var inputTxt = document.getElementById("inputTextBox").value;
     if (inputTxt != '') {
-    var msg = document.createElement('div');
-    var paragraph_value = document.createElement('p');
-    var profile = document.createElement('img');
-    paragraph_value.className = 'supp_one_message_txt';
-    msg.className = "supp_one_message_send";
-    profile.className = "profile";
-    profile.src = "icons/Ex-2.jpg";
-    paragraph_value.innerHTML = inputTxt;
-    var div1 = document.createElement('div');
-    var div2 = document.createElement('div');
-    var div3 = document.createElement('div');
-    div1.appendChild(paragraph_value);
-    div3.appendChild(profile);
-    msg.appendChild(div3);
-    msg.appendChild(div2);
-    msg.appendChild(div1);
+        var msg = document.createElement('div');
+        var paragraph_value = document.createElement('p');
+        var profile = document.createElement('img');
+        paragraph_value.className = 'supp_one_message_txt';
+        msg.className = "supp_one_message_send";
+        profile.className = "profile";
+        profile.src = "icons/Ex-2.jpg";
+        paragraph_value.innerHTML = inputTxt;
+        var div1 = document.createElement('div');
+        var div2 = document.createElement('div');
+        var div3 = document.createElement('div');
+        div1.appendChild(paragraph_value);
+        div3.appendChild(profile);
+        msg.appendChild(div3);
+        msg.appendChild(div2);
+        msg.appendChild(div1);
 
-    var content = document.getElementById("Support-chatBox-content");
-    content.appendChild(msg);
+        var content = document.getElementById("Support-chatBox-content");
+        content.appendChild(msg);
 
-    send_msg();
-    receive_msg();
+        send_msg();
+        receive_msg();
     }
     else {
-        alert("لطفا پیام مورد نظر را در کادر متنی وارد نمایید");
+        alert("لطفا پیام خود را در کادر مربوطه وارد نمایید");
     }
 }
 
@@ -74,14 +74,40 @@ function chat_start() {
                 return true ;
             }
             else {
-                window.alert("Error: "+ this.statusText);;
+                window.alert("Error: "+ this.statusText);
                 return false ;
             }
         }
     };
-    xmlhttp.open("GET","http://51.15.59.130:46260/start",true);
+    xmlhttp.open("GET","https://test-chat.fandogh.org/start",true);
     xmlhttp.send(null);
 }
+
+/*
+function chat_start() {
+    var xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange = chat_start_process;
+    xmlhttp.open("GET","http://51.15.59.130:46260/start",true);
+    xmlhttp.send(null);
+
+    myVar = setTimeout(chat_start_process, 200);
+
+    function chat_start_process(){
+        if(this.readyState == 4){
+            if(this.status == 200){
+                window.alert("Sucses "+ this.statusText);
+                return true ;
+                clearTimeout(myVar);
+            }
+            else {
+                window.alert("Error: "+ this.statusText);
+                return false ;
+            }
+        }
+    };
+}
+*/
+
 
 function send_msg() {
 
@@ -98,7 +124,7 @@ function send_msg() {
             }
         }
     };
-    xmlhttp.open("POST","http://51.15.59.130:46260/send",true);
+    xmlhttp.open("POST","https://test-chat.fandogh.org/send",true);
     var msg_body = '{"message" : "Salam"}';
     xmlhttp.send(msg_body);
 }
@@ -124,7 +150,7 @@ function get_support_inf() {
             }
         }
     };;
-    xmlhttp.open("GET","http://51.15.59.130:46260/support",true);
+    xmlhttp.open("GET","https://test-chat.fandogh.org/support",true);
     xmlhttp.send(null);
 }
 
@@ -143,6 +169,6 @@ function receive_msg() {
             }
         }
     };;
-    xmlhttp.open("GET","http://51.15.59.130:46260/fetch",true);
+    xmlhttp.open("GET","https://test-chat.fandogh.org/fetch",true);
     xmlhttp.send(null);
 }

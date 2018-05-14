@@ -13,9 +13,9 @@ function includeHTML() {
                     elmnt.removeAttribute("include-html");
                     includeHTML();
                 }
-            }
+            };
             xhttp.open("GET", "modular-htmls/"+file, true);
-            xhttp.send();
+            xhttp.send(null);
             return;
         }
     }
