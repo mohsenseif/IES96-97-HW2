@@ -14,7 +14,7 @@ function includeHTML() {
                     includeHTML();
                 }
             }
-            xhttp.open("GET", file, true);
+            xhttp.open("GET", "modular-htmls/"+file, true);
             xhttp.send();
             return;
         }

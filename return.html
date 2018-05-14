@@ -107,68 +107,10 @@
     <div include-html="footer.html" style="width: 100%">
     </div>
 
-    <div id="Support-chatBtn" class="supp_btn_frame" onclick="showChatBox()">
-        <div class="supp_btn">
-            <div><span>پشتیبانی آنلاین</span></div>
-            <div><img src="icons/chatbox.png"></div>
-        </div>
+    <div include-html="Support-chatBtn.html" id="Support-chatBtn" class="supp_btn_frame" onclick="showChatBox()">
     </div>
 
-    <div id="Support-chatBox" class="supp_btn_frame">
-
-        <div class="supp-header">
-            <div class="supp-header-grid">
-
-                <div class="supp-header-gridItem1">
-                    <div class="big-profile"></div>
-                </div>
-
-                <div class="supp-header-gridItem1">
-                    <div class="supp_header_txt">
-                        <span><b>پشتیبان بخش فروش</b></span>
-                        <br />
-                        <span>محسن سیف</span>
-                    </div>
-                </div>
-
-                <div class="supp-header-gridItem1" onclick="hideChatBox()">
-                    <div class="minimize-btn"><span>-</span></div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="Support-chatBox-content" class="supp_messages_box">
-
-            <div class="supp_one_message_send">
-                <div>
-                    <div class="profile"></div>
-                </div>
-                <div></div>
-                <div>
-                    <p class="supp_one_message_txt">سلام خوبی ؟؟؟؟ من خوسنسثحلصئثلئ سیلتنقدلدش حقخئلحخقئل قئخئقخلئخئخخ </p>
-                </div>
-            </div>
-
-            <div class="supp_one_message_receive">
-                <div>
-                    <p class="supp_one_message_txt">سلام خوبی ؟؟؟؟ من خوسنسثحلصئثلئ سیلتنقدلدش حقخئلحخقئل قئخئقخلئخئخخ </p>
-                </div>
-                <div></div>
-                <div>
-                    <div class="profile"></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="supp_text_box">
-            <div>
-                <img id="send_message_btn" src="icons/Search.png" onclick="create_a_send_msg()">
-                <form><input id="inputTextBox" class="supp_input_txt" type="text" value="متن پیام به پشتیبانی..."></form>
-            </div>
-        </div>
-
+    <div include-html="Support-chatBox.html" id="Support-chatBox" class="supp_btn_frame">
     </div>
 
 <script>
