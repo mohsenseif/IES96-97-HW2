@@ -41,10 +41,11 @@ function create_a_send_msg() {
     if (inputTxt != '') {
     var msg = document.createElement('div');
     var paragraph_value = document.createElement('p');
-    var profile = document.createElement('div');
+    var profile = document.createElement('img');
     paragraph_value.className = 'supp_one_message_txt';
     msg.className = "supp_one_message_send";
     profile.className = "profile";
+    profile.src = "icons/Ex-2.jpg";
     paragraph_value.innerHTML = inputTxt;
     var div1 = document.createElement('div');
     var div2 = document.createElement('div');
